@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+	
+<tiles-definitions>
+	<definition name="mytemplate" 
+		template="/WEB-INF/views/admin_template.jsp">
+		<put-attribute name="content" value=""></put-attribute>
+	</definition>
+	
+	<definition name="dashboardtemp" 
+		template="/WEB-INF/views/dashboard_template.jsp">
+		<put-attribute name="content" value=""></put-attribute>
+	</definition>
+	
+	<definition name="dashboard" extends="dashboardtemp">
+		<put-attribute name="content" value="/WEB-INF/views/dashboard.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="member" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/member.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="memberform" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/memberform.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="asset" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/asset.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="assetform" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/assetform.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="formedit" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/memberedit.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="assetedit" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/assetedit.jsp"></put-attribute>
+	</definition>
+	
+	
+</tiles-definitions>
